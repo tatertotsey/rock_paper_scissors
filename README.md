@@ -1,2 +1,2 @@
-# rock_paper_scissors
-First JS Project
+First JS Project try 
+HTML and CSS parts hopefully will follow
