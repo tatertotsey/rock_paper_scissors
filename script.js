@@ -12,9 +12,14 @@ function computerPlay() {
     }
 }
 //console.log(computerPlay());
-
+function chooseRPS(e) {
+    const button = document.querySelector(`button[data-code="${e.data-code}"]`);
+    if (!button) return;
+}
 
 function playRound(playerSelection, computerSelection) {
+   // playerSelection = window.addEventListener('click', chooseRPS(e));
+
     if (playerSelection == computerSelection) {
         return "Tie";
     }
@@ -46,35 +51,48 @@ function playRound(playerSelection, computerSelection) {
 
     }
 } 
-//console.log("PlayerSelection> " + playerSelection);
-//console.log("Computerselection> " + computerSelection);
-//console.log(playRound(playerSelection, computerSelection));
+
 
 function game() {
     let player = 0;
     let computer = 0;
     let listresult = [];
 
-    for (let round = 0; round < 5; round++) {
-       var playerSelection = "paper";
-       //var playerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
-
-        var computerSelection = computerPlay().toLowerCase();
-        listresult = playRound(playerSelection, computerSelection).split(" ");
-
-        console.log(listresult);
-
-        if (listresult[1] == "Win!") {
-            player += 1;
-        }
-
-        if (listresult[1] == "Lose!") {
-            computer += 1;
-        }
-
-        listresult = [];
-    }
     let result = "Player: " + player.toString() + " Computer: " + computer.toString();
     return result
 }
 console.log(game());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // for (let round = 0; round < 5; round++) {
+    //     var playerSelection = "paper";
+    //     //var playerSelection = prompt("Rock, Paper or Scissors?").toLowerCase();
+
+    //     var computerSelection = computerPlay().toLowerCase();
+    //     listresult = playRound(playerSelection, computerSelection).split(" ");
+
+    //     console.log(listresult);
+
+    //     if (listresult[1] == "Win!") {
+    //         player += 1;
+    //     }
+
+    //     if (listresult[1] == "Lose!") {
+    //         computer += 1;
+    //     }
+
+    //     listresult = [];
+    // }
