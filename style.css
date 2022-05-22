@@ -3,6 +3,7 @@ html {
     opacity: 0.9;
 }
 
+
 h1 {
     font-size: 50px;
 }
@@ -15,28 +16,28 @@ h1, footer {
 
 .header {
     background-color: rgb(12, 4, 4);
-    padding: 50px;
-    margin: 0px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
 }
 
 button {
     background-color: transparent;
     padding: 15px;
-    margin: 20px;
+    margin: 20px; 
     border-radius: 50%;
     border-color: rgb(173, 135, 59);
+
 }
 
 .buttons {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 230px; 
     position: relative;
+    height: 100%;
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .scoreboard {
@@ -44,24 +45,16 @@ button {
     font-family: 'Courier New', Courier, monospace;
 }
 
-h3 {
+.sb-title {
     text-align: center;
-    position: relative;
-    top: -200px;
 }
 
-h4 {
+.pVc {
+    display: flex;
     text-align: center;
-    position: relative;
-}
-.leftsb {
-    top: -200px;
-    padding-right: 300px;
-}
-
-.rightsb {
-    top: -240px;
-    padding-left: 300px;
+    justify-content:center;
+    align-items: center;
+    gap: 200px;
 }
 
 footer {
@@ -71,7 +64,6 @@ footer {
 .footer {
     position: fixed;
     background-color: rgb(12, 4, 4);
-    padding: 20px;
     left: 0;
     bottom: 0;
     width: 100%;

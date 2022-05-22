@@ -12,14 +12,15 @@ function computerPlay() {
     }
 }
 //console.log(computerPlay());
-function chooseRPS(e) {
-    const button = document.querySelector(`button[data-code="${e.data-code}"]`);
-    if (!button) return;
-}
+
+
+// function chooseRPS(button) {
+//     const choice = document.querySelectorAll(`.button[data-code="${e.data-code}"]`);
+//     if (!choice) return;
+// }
 
 function playRound(playerSelection, computerSelection) {
-   // playerSelection = window.addEventListener('click', chooseRPS(e));
-
+  
     if (playerSelection == computerSelection) {
         return "Tie";
     }
