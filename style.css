@@ -3,13 +3,12 @@ html {
     opacity: 0.9;
 }
 
-
 h1 {
     font-size: 50px;
 }
 
 h1, footer {
-    text-align: center;
+    text-align: center; 
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -17,11 +16,11 @@ h1, footer {
 .header {
     background-color: rgb(12, 4, 4);
     padding: 50px;
-    position: relative;
     margin: 0px;
+    position: fixed;
     top: 0;
     left: 0;
-    /* width: 100%; */
+    width: 100%; 
 }
 
 button {
