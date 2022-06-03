@@ -1,0 +1,69 @@
+html {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1, footer {
+    text-align: center; 
+    color: whitesmoke;
+}
+
+.header {
+    position: fixed;
+    background-color: rgb(12, 4, 4);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.buttons button {
+    background-color: transparent;
+    padding: 1em;
+    margin: 2em; 
+    border-radius: 50%;
+    border-color: rgb(173, 135, 59);
+}
+
+.buttons {
+    margin-top: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreboard {
+    color:rgb(173, 135, 59);
+}
+
+.sb-title {
+    text-align: center;
+}
+
+.pVc {
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    gap: 8em;
+}
+
+.player-score, .computer-score {
+    font-size: 1.5em;
+}
+
+footer {
+    font-size: large;
+}
+
+.footer {
+    position: fixed;
+    background-color: rgb(12, 4, 4);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
